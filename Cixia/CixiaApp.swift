@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 
+
 @main
 struct CixiaApp: App {
     var sharedModelContainer: ModelContainer = {
@@ -23,6 +24,8 @@ struct CixiaApp: App {
         }
     }()
 
+    @Environment(\.openWindow) private var openWindow
+
     var body: some Scene {
         MenuBarExtra("词匣", systemImage: "star") {
             ContentView()
@@ -32,7 +35,7 @@ struct CixiaApp: App {
                 // TODO: 实现词库更新逻辑
             }
             Button("设置…") {
-                // TODO: 弹出设置窗口
+                openWindow(id: "settings")
             }
             Divider()
             Button("退出") {
@@ -40,5 +43,9 @@ struct CixiaApp: App {
             }
         }
         .modelContainer(sharedModelContainer)
+
+        WindowGroup(id: "settings") {
+            SettingsView()
+        }
     }
 }
