@@ -1,0 +1,71 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# User settings
+*.xcuserstate
+*.xcworkspace/
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# SwiftUI Previews
+Preview Content/
+
+# Other
+*.moved-aside
+*.swp
+*.lock
+*.tmp
+*.orig
+*.log
+*.swm
+
+# Local environment
+.env
+.env.*
+
+# Rime
+*.userdb
+*.log 
